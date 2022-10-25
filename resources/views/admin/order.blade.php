@@ -17,6 +17,20 @@
             <div class="content-wrapper">
                 <h1 class="text-white h1 text-center" >All Orders</h1>
 
+                <div class="mb-3" style="padding-left: 400px; padding-bottom:30px;" >
+
+                  <form action="{{url('search')}}" method="GET" >
+
+                    @csrf
+
+                    <input type="text" name="search" placeholder="Search For Something">
+
+                    <input type="submit" value="Search" class="btn btn-outline-primary">
+
+                  </form>
+
+                </div>
+
                 <table class="table table-dark table-striped">
                     <tr>
                         <th>Name</th>
@@ -29,8 +43,12 @@
                         <th>Payment Status</th>
                         <th>Delivery Status</th>
                         <th>Image</th>
+                        <th>Delivered</th>
+                        <th>Print PDF</th>
+                        <th>Send Email</th>
                     </tr>
-                @foreach($order as $order)
+
+                @forelse($order as $order)
                     <tr>
                         <td>{{$order->name}}</td>
                         <td>{{$order->email}}</td>
@@ -44,8 +62,42 @@
                         <td>
                             <img  src="/product/{{$order->image}}"/>
                         </td>
+
+                        <td>
+
+                        @if($order->delivery_status='processing')
+
+                          <a href="{{url('delivered',$order->id)}}"
+                          onclick="return confirm('Are you sure this product is delivered!!!')" class="btn btn-outline-primary">Delivered</a>
+
+                        @else
+
+                          <p>Delivered</p>
+
+                        @endif
+
+                        </td>
+
+                        <td>
+                          <a href="{{url('print_pdf',$order->id)}}" class="btn btn-outline-secondary">Print PDF</a>
+                        </td>
+
+                        <td>
+                          <a href="{{url('send_email',$order->id)}}" class="btn btn-outline-info">Send Email</a>
+                        </td>
+
                     </tr>
-                @endforeach
+
+                    @empty
+
+                    <tr>
+                      <td  colspan="16" class="text-white" > 
+                        No Data Found
+                      </td>
+                    </tr>
+
+
+                @endforelse
 
                 </table>
 
