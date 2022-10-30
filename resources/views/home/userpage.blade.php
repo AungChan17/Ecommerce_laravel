@@ -129,9 +129,9 @@
         @include('home.footer');
 
       <div class="cpy_">
-         <p class="mx-auto">© 2021 All Rights Reserved By <a href="https://html.design/">Free Html Templates</a><br>
+         <p class="mx-auto">© 2021 All Rights Reserved By <a href="">Aung Chan</a><br>
          
-            Distributed By <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
+            Distributed By <a href="" target="_blank">ACM</a>
          
          </p>
       </div>

@@ -13,6 +13,7 @@ use Session;
 use Stripe;
 use App\Models\Comment;
 use App\Models\Reply;
+use App\Models\Message;
 
 class HomeController extends Controller
 {
@@ -360,6 +361,41 @@ class HomeController extends Controller
         orWhere('category','LIKE',"%$search_text%")->paginate(10);
 
         return view('home.userpage',compact('product','comment','reply'));
+    }
+
+    public function contact_page()
+    {
+        return view('home.contact');
+    }
+
+    public function send_message(Request $request)
+    {
+        if(Auth::id())
+        {
+            $message=new message;
+            $message->name=$request->name;
+            $message->email=$request->email;
+            $message->subject=$request->subject;
+            $message->message=$request->message;
+            $message->save();
+
+            return redirect()->back()->with('message','You Send Message Successsfully.');
+        }
+        else
+        {
+            return redirect('login');
+        }
+    }
+
+    public function product_page()
+    {
+        $product=product::all();
+        return view('home.product_page',compact('product'));
+    }
+
+    public function about_page()
+    {
+        return view('home.about_page');
     }
 
 

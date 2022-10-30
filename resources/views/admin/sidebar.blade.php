@@ -103,6 +103,15 @@
             </a>
           </li>
 
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="{{url('receive_message')}}">
+              <span class="menu-icon">
+                <i class="mdi mdi-playlist-play"></i>
+              </span>
+              <span class="menu-title">Message</span>
+            </a>
+          </li>
+
         </ul>
 
       </nav>

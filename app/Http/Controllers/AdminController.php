@@ -10,6 +10,8 @@ use App\Models\Product;
 
 use App\Models\Order;
 
+use App\Models\Message;
+
 use PDF;
 
 use Notification;
@@ -213,5 +215,12 @@ class AdminController extends Controller
         ->orWhere('product_title','LIKE',"%$searchText%")->get();
 
         return view('admin.order',compact('order'));
+    }
+
+    public function receive_message()
+    {
+        $message=message::all();
+
+        return view('admin.message',compact('message'));
     }
 }

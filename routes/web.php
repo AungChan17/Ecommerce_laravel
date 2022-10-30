@@ -35,6 +35,9 @@ Route::middleware([
 Route::get('/redirect',[HomeController::class,'redirect'])->middleware('auth','verified');
 // to write middleware in step-18
 
+
+// AdminController 
+
 Route::get('/view_category',[AdminController::class,'view_category']);
 
 Route::post('/add_category',[AdminController::class,'add_category']);
@@ -53,6 +56,22 @@ Route::get('/update_product/{id}',[AdminController::class,'update_product']);
 
 Route::post('/update_product_confirm/{id}',[AdminController::class,'update_product_confirm']);
 
+Route::get('/order',[AdminController::class,'order']);
+
+Route::get('/delivered/{id}',[AdminController::class,'delivered']);
+
+Route::get('/print_pdf/{id}',[AdminController::class,'print_pdf']);
+
+Route::get('/send_email/{id}',[AdminController::class,'send_email']);
+
+Route::post('/send_user_email/{id}',[AdminController::class,'send_user_email']);
+
+Route::get('/search',[AdminController::class,'searchdata']);
+
+Route::get('/receive_message',[AdminController::class,'receive_message']);
+
+// HomeController
+
 Route::get('/product_details/{id}',[HomeController::class,'product_details']);
 
 Route::post('/add_cart/{id}',[HomeController::class,'add_cart']);
@@ -67,18 +86,6 @@ Route::get('/stripe/{totalprice}',[HomeController::class,'stripe']);
 
 Route::post('stripe/{totalprice}',[HomeController::class, 'stripePost'])->name('stripe.post');
 
-Route::get('/order',[AdminController::class,'order']);
-
-Route::get('/delivered/{id}',[AdminController::class,'delivered']);
-
-Route::get('/print_pdf/{id}',[AdminController::class,'print_pdf']);
-
-Route::get('/send_email/{id}',[AdminController::class,'send_email']);
-
-Route::post('/send_user_email/{id}',[AdminController::class,'send_user_email']);
-
-Route::get('/search',[AdminController::class,'searchdata']);
-
 Route::get('/show_order',[HomeController::class,'show_order']);
 
 Route::get('/cancel_order/{id}',[HomeController::class,'cancel_order']);
@@ -88,6 +95,14 @@ Route::post('/add_comment',[HomeController::class,'add_comment']);
 Route::post('/add_reply',[HomeController::class,'add_reply']);
 
 Route::get('/product_search',[HomeController::class,'product_search']);
+
+Route::get('/contact_page',[HomeController::class,'contact_page']);
+
+Route::post('/send_message',[HomeController::class,'send_message']);
+
+Route::get('/product_page',[HomeController::class,'product_page']);
+
+Route::get('/about_page',[HomeController::class,'about_page']);
 
 
 
