@@ -119,12 +119,6 @@
 
 
         <!-- Comment and reply system ends here -->
-
-
-        @include('home.subscribe');
-
-     
-        @include('home.client');
      
         @include('home.footer');
 
