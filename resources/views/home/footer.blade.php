@@ -38,7 +38,7 @@
                            <li><a href="#">Account</a></li>
                            <li><a href="{{ route('login') }}">Login</a></li>
                            <li><a href="{{ route('register') }}">Register</a></li>
-                           <li><a href="#">Shopping</a></li>
+                           <li><a href="{{url('product_page')}}">Shopping</a></li>
                         </ul>
                      </div>
                   </div>
@@ -46,13 +46,15 @@
                   </div>     
                   <div class="col-md-5">
                      <div class="widget_menu">
-                        <h3>Newsletter</h3>
+                        <h3>Social Media</h3>
                         <div class="form_sub">
                            <form>
                               <fieldset>
                                  <div class="field">
-                                    <input type="email" placeholder="Enter Your Mail" name="email" />
-                                    <input type="submit" value="Subscribe" />
+                                    <a href="#"><img style="width: 30px ; height:30px; margin-right:5px; " src="/images/facebook.png"/></a>
+                                    <a href="#"><img style="width: 30px ; height:30px; margin-right:5px;  " src="/images/instagram.png"/></a>
+                                    <a href="#"><img style="width: 30px ; height:30px; margin-right:5px;  " src="/images/twitter.png"/></a>
+                                    <a href="#"><img style="width: 30px ; height:30px; margin-right:5px;  " src="/images/viber.png"/></a>
                                  </div>
                               </fieldset>
                            </form>

@@ -31,6 +31,8 @@
 
                 </div>
 
+
+                
                 <table class="table table-dark table-striped">
                     <tr>
                         <th>Name</th>
@@ -100,6 +102,7 @@
                 @endforelse
 
                 </table>
+                
 
             </div>
         </div>

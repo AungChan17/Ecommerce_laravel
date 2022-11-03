@@ -89,11 +89,8 @@
                         </h2>
                      </div>
                      <p style="margin-top: 20px;margin-bottom: 30px;">
-                        Vitae fugiat laboriosam officia perferendis provident aliquid voluptatibus dolorem, fugit ullam sit earum id eaque nisi hic? Tenetur commodi, nisi rem vel, ea eaque ab ipsa, autem similique ex unde!
+                       We Will Annouce In Website When We Have New Products & Goods
                      </p>
-                     <a href="">
-                     Shop Now
-                     </a>
                   </div>
                </div>
             </div>
@@ -119,13 +116,13 @@
                         <a href="">
                         <i class="fa fa-phone" aria-hidden="true"></i>
                         <span>
-                        Call +01 1234567890
+                        Call +95 781661374
                         </span>
                         </a>
                         <a href="">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
                         <span>
-                        demo@gmail.com
+                        chanmyae1792003@gmail.com
                         </span>
                         </a>
                      </div>
@@ -133,12 +130,9 @@
                </div>
                <div class="col-md-4 footer-col">
                   <div class="footer_detail">
-                     <a href="index.html" class="footer-logo">
-                     Famms
+                     <a href="" class="footer-logo">
+                     Aung Chan
                      </a>
-                     <p>
-                        Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
-                     </p>
                      <div class="footer_social">
                         <a href="">
                         <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -170,9 +164,9 @@
                <div class="col-lg-7 mx-auto px-0">
                   <p>
                      &copy; <span id="displayYear"></span> All Rights Reserved By
-                     <a href="https://html.design/">Free Html Templates</a><br>
+                     <a href="">AungChan</a><br>
          
-                     Distributed By <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
+                     Distributed By <a href="" target="_blank">ACM</a>
                   </p>
                </div>
             </div>

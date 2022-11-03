@@ -12,7 +12,7 @@
                            <a class="nav-link" href="{{url('/')}}">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="{{url('product_page')}}">Products</a>
+                           <a class="nav-link" href="{{url('product_page')}}">Products </a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link" href="{{url('about_page')}}">About</a>

@@ -379,7 +379,7 @@ class HomeController extends Controller
             $message->message=$request->message;
             $message->save();
 
-            return redirect()->back()->with('message','You Send Message Successsfully.');
+            return redirect()->back()->with('message','You Sent Message Successsfully.');
         }
         else
         {
