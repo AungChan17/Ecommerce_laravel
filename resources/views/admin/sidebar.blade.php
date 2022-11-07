@@ -9,13 +9,7 @@
 
           <li class="nav-item profile">
             <div class="profile-desc">
-              <div class="profile-pic">
-                <div class="profile-name">
-                  <x-app-layout>
-                  
-                  </x-app-layout>
-                </div>
-              </div>
+            
               <a href="#" id="profile-dropdown" data-bs-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
               <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
                 <a href="#" class="dropdown-item preview-item">
